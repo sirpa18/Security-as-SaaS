@@ -1,0 +1,31 @@
+
+<form action="/login" method="POST">
+  <div><h1>
+    <label for="uname">Username:  </label>
+    <input type="text" id="uname" name="uname" required>
+  </div></h1>
+  <div><h1>
+    <label for="password">Password:   </label>
+    <input type="password" id="password" name="password" required>
+  </div></h1>
+  <br>
+  <div><h1>
+  <button style="height:50px;width=2000px;font-size: 30px; background-color: #4CAF50;"; type="submit">  Login  </button>
+  </div></h1>
+</form>
+<script language="javascript">
+<!--//
+/*This Script allows people to enter by using a form that asks for a
+UserID and Password*/
+function pasuser(form) {
+if (form.uname.value=="cryptography") { 
+if (form.password.value=="hello") {              
+location="index.ejs" 
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+//-->
+</script>
